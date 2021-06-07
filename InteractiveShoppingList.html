@@ -1,0 +1,166 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Holiday Destinations App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+  function addToShoppingList () {
+	var newItem = document.getElementById("shopping-item").value;
+	var shoppingList = document.getElementById("shopping-list")
+	var li = document.createElement("li");
+
+	li.innerHTML = newItem;
+	shoppingList.append(li);
+  }
+  
+<!--  function removeFromShoppingList () {-->
+<!--	var oldItem = document.getElementById("shopping-item").value;-->
+<!--	var shoppingList = document.getElementById("shopping-list")-->
+<!--	var del = document.removeChild() -->
+  
+  
+  }
+  
+  
+  </script>
+  <style>
+  
+  .carousel-caption {
+  
+		color:white;
+		margin-top: 5px;
+  }
+  
+  .carousel-item {
+  border: 1px solid black;
+  }
+  
+  #demo {
+  margin-bottom: 20px;
+  
+  }
+  </style>
+
+</head>
+<body>
+
+
+  <div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"><h1>My Interactive Shopping Application</h1>
+          <p>Take a look at the available destinations below!</p></div>
+     <div class="col-sm-4"></div>
+</div>
+  
+<div class="container">
+
+<div class="row">
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/grece.jpg" alt="Greece" width="800px" height="650px">
+	  <div class="carousel-caption">
+	  <h3>Greece</h3>
+      <p>Santorin</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/salone.jpg" alt="Sierra Leone" width="800px" height="650px">
+	  <div class="carousel-caption">
+	  <h3>Sierra Leone</h3>
+      <p>Freetown</p>
+	  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/egypt.jpg" alt="Egypt" width="800px" height="650px">
+	  <div class="carousel-caption">
+	  <h3>Egypt</h3>
+      <p>Giza</p>
+	  </div>
+    </div>
+	<div class="carousel-item">
+      <img src="images/uae.jpg" alt="UAE" width="800px" height="650px">
+	  <div class="carousel-caption">
+	  <h3>UAE</h3>
+      <p>Dubai</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="images/turkey.jpg" alt="Turkey" width="800px" height="650px">
+	  <div class="carousel-caption">
+	  <h3>Turkey</h3>
+      <p>Istanbul</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="images/london.jpg" alt="London" width="800px" height="650px">
+	  <div class="carousel-caption">
+	  <h3>England</h3>
+      <p>London</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="images/tokyo.jpg" alt="Tokyo" width="800px" height="650px">
+	  <div class="carousel-caption">
+	  <h3>Japan</h3>
+      <p>Tokyo</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+
+
+
+</div>
+
+
+<div class="row"><input id="shopping-item"></input>
+<button id="shopping-button" onclick="addToShoppingList()">Add Destination</button>
+
+
+</div>
+<div class="row">&nbsp;</div>
+<div class="row"><button class="btn btn-danger" id="shopping-button" data-toggle="collapse" data-target="#shopping">My Destinations</button></div>
+  <div class="row">
+	<div id="shopping" class="collapse">
+	<h3>My Destinations</h3>
+	<ul id="shopping-list">
+		<li>Items:</li>
+	</ul>
+	</div>
+  
+  
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
