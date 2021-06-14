@@ -1,0 +1,116 @@
+<!DOCTYPE Html>
+
+<html>
+	<head>
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+		<title>Assesment 1</title>
+		<style>
+		#div {
+		background: yellow;
+		border: 1px solid black; 
+		
+		}
+		
+		#3rdDiv {
+		margin-top: 50px;
+		margin-left: 8px;
+		
+		
+		}
+		
+		#youtube {
+		padding: 20px;
+		
+		}
+		
+		#firstRow {
+		padding: 20px;
+		
+		}
+		
+		</style>
+	</head>
+	
+	<body>
+	
+	<div class="row" id="firstRow">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+				<h1>This Is An Assesment</h1>
+				<ol>
+					<li>Ordered List</li>
+					<li>Yellow Div</li>
+					<li>Youtube Video</li>
+					<li>Bootstrap Collapse</li>
+					<li>Button 1</li>
+					<li>Button 2</li>
+					<li>SQL Query</li>
+				
+				</ol>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+		
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8" id="div">
+		<p>hello</p>
+		</div>
+		<div class="col-sm-2"></div>
+		</div>
+		
+	<div class="row" id="3rdDiv">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4" id="youtube">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Cl95TYblQsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="col-sm-4"></div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-5"></div>
+		<div class="col-sm-2">
+			<div class="container">
+		 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Toggle to view random text</button>
+
+
+		 <div id="demo" class="collapse"> This section contains the random text that you came here to see :) </div>
+		</div>
+		<div class="col-sm-5"></div>
+	
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-5"></div>
+		<div class="col-sm-2">
+		<input type="button" class="btn btn-success" value="alert" onclick="alert('Thanks For Clicking Me!')"/>
+		</div>
+		<div class="col-sm-5"></div>
+	
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8"><p id="TextChange"> This is a string of text that will be changed soon.</p>
+		<input type="button" class="btn btn-success" value="Change" onclick="chgTxt()"/>
+		</div>
+		<div class="col-sm-2"></div>
+	
+	</div>
+	
+	<script>
+		function chgTxt() {
+			document.getElementById("TextChange").innerHTML = "OH damn! We changed the text";
+		
+		}
+	</script>
+	
+	</body>
+</html>
