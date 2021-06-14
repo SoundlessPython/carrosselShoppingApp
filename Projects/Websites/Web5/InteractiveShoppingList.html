@@ -18,12 +18,23 @@
 	shoppingList.append(li);
   }
   
-<!--  function removeFromShoppingList () {-->
-<!--	var oldItem = document.getElementById("shopping-item").value;-->
-<!--	var shoppingList = document.getElementById("shopping-list")-->
-<!--	var del = document.removeChild() -->
+  function removeFromShoppingList () {
+	var oldItem = document.getElementById("shopping-item").value;
+	var shoppingList = document.getElementById("shopping-list")
+	var del = document.removeChild()
   
   
+  }
+
+  function addFromCarousel () {
+    newImageItem = document.getElementById("Greece").innerHTML;
+    var shoppingList = document.getElementById("shopping-list");
+    var li = document.createElement("li");
+
+    li.innerHTML = newImageItem;
+    shoppingList.append(li);
+
+
   }
   
   
@@ -73,9 +84,9 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/grece.jpg" alt="Greece" width="800px" height="650px">
+      <img src="images/grece.jpg" alt="Greece" width="800px" height="650px" onclick="addFromCarousel()">
 	  <div class="carousel-caption">
-	  <h3>Greece</h3>
+	  <h3 id="Greece">Greece</h3>
       <p>Santorin</p>
   </div>
     </div>
